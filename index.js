@@ -6,6 +6,7 @@ const port = 3000;
 
 // Middleware untuk menangani request body dalam format JSON
 app.use(express.json());
+app.use(express.static('public'));
 
 // ROUTER GET
 app.get('/', (req, res) => {
