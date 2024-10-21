@@ -20,7 +20,7 @@ app.post('/data', (req, res) => {
 });
 
 app.get('*', (req, res) => {
-    res.send('Hello World guyss 404');
+    res.status(404).send('Hello World guyss 404');
 });
 
 // Jalankan server di port 3000
