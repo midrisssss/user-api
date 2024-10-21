@@ -19,6 +19,10 @@ app.post('/data', (req, res) => {
     res.send(`Data yang diterima: ${JSON.stringify(userData)}`);
 });
 
+app.get('*', (req, res) => {
+    res.send('Hello World guyss 404');
+});
+
 // Jalankan server di port 3000
 app.listen(port, () => {
     console.log(`Server berjalan di http://localhost:${port}`);
