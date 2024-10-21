@@ -1,0 +1,13 @@
+# node_modules directory
+node_modules/
+
+# Environment vaiables
+.env
+
+# logs
+logs/
+*.logs
+
+# OS-spesific files (optional)
+.DS_Store
+Thumbs.db
